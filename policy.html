@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー・法的表示 | Kizuna0411 Apps</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .app-policy { border-top: 2px solid #222; margin-top: 52px; padding-top: 28px; }
+    .app-policy:first-of-type { margin-top: 24px; }
+    .meta { color: #666; font-size: .9rem; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+    .data-table th, .data-table td { border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }
+    .data-table th { background: #f6f6f6; }
+    .notice { background: #fff8e5; border-left: 4px solid #d99a00; padding: 12px 16px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>プライバシーポリシー・法的表示</h1>
+    <p>本ページは Kizuna0411 が提供する各プロダクトの情報取扱いを、実装で利用する端末機能・SDK・クラウドサービスごとに説明するものです。該当するプロダクトの見出しを選んでご確認ください。</p>
+    <p class="meta">制定・最終更新日：2026年7月31日　／　事業者・お問い合わせ先：kizuna yoshihara（<a href="mailto:kyoshihara0411@gmail.com">kyoshihara0411@gmail.com</a>）</p>
+
+    <h2>全プロダクトに共通する取扱い</h2>
+    <h3>利用目的・安全管理・権利行使</h3>
+    <p>取得した情報は、各プロダクトに記載した機能提供、認証、同期、広告表示、利用状況の把握、不具合調査、問い合わせ対応、不正利用防止および法令対応のためにのみ利用します。目的外利用または法令上の根拠のない第三者提供は行いません。アクセス制御、通信の暗号化、権限管理、委託先の選定・監督および事故対応により安全管理に努めます。</p>
+    <p>本人は、当方が保有する個人データについて、利用目的の通知、開示、訂正、削除、利用停止または第三者提供の停止を上記窓口へ請求できます。本人確認後、法令に従って対応します。問い合わせ内容は対応完了後、合理的な期間で削除します。法令上保存義務のある情報は、その期間保存することがあります。</p>
+    <h3>委託・国外移転・外部送信</h3>
+    <p>本ページに記載する Firebase/Google、Supabase、Cloudflare、Apple、Mapbox、OpenAI 等は、機能提供のための委託先または利用者が直接利用する第三者サービスです。各社が海外に所在する場合があります。必要な契約・安全管理措置を確認して委託し、第三者提供に該当する取扱いでは法令に従い同意その他必要な手続きを行います。端末情報・Cookie等の外部送信は、下表の送信先・目的の範囲で行います。</p>
+    <h3>未成年者・改定</h3>
+    <p>未成年の方は、必要に応じて保護者等の同意を得てご利用ください。本ポリシーを改定する場合は、このページに掲載し、重要な変更はアプリ内等でも周知します。</p>
+
+    <section class="app-policy" id="dorepay"><h2>DorePay</h2><p>家計・決済管理サービスです。</p><table class="data-table"><tr><th>情報</th><th>取得・利用目的</th><th>送信先</th></tr><tr><td>登録情報、家計・カード・決済に関する入力内容</td><td>アカウント、家計管理、同期、サポート</td><td>Firebase、Supabase</td></tr><tr><td>端末識別子、利用・広告・診断情報</td><td>分析、広告配信、品質改善</td><td>Firebase Analytics、Google AdMob</td></tr><tr><td>購入状態</td><td>有料機能の提供</td><td>Apple（カード番号は当方に提供されません）</td></tr></table><p>広告のパーソナライズ／トラッキングは、iOSではApp Tracking Transparencyの許可を得た場合に限り行います。アカウントと同期データの削除はアプリ内の削除機能または上記窓口で受け付けます。</p><p class="notice">有料機能が表示される場合は、価格、支払方法、提供時期、解約・返金条件を購入画面で確認してください。App Store課金の返金・解約はAppleの手続に従います。</p></section>
+    <section class="app-policy" id="currency-window"><h2>Currency Window</h2><p>為替情報を扱うアプリです。任意の現在地、選択通貨・設定、購入状態を端末内で扱い、為替レート取得時には通信先にIPアドレス等の通常の通信記録が送信されます。現在地は地域に応じた表示のためだけに用い、継続的に追跡・当方サーバーへ保存しません。購入はAppleのApp Storeを通じて処理され、カード番号は取得しません。</p></section>
+    <section class="app-policy" id="dokoiku"><h2>DokoIku</h2><p>位置情報・地図を用いるアプリです。現在地、ユーザーが保存・共有する地点やメモ、端末内設定を、地図表示・経路案内・共有のために扱います。地図表示にはApple MapKitを利用し、共有を選んだデータはCloudKitを介して共有相手に提供されます。共有は利用者が明示的に実行した場合のみです。位置情報は許可時のみ取得し、端末設定からいつでも撤回できます。</p></section>
+    <section class="app-policy" id="eswriter"><h2>ESWriter / ES Manager</h2><p>就職活動用の文書管理サービスです。メールアドレス・認証情報、プロフィール、エントリーシート、質問・回答、テンプレート等の入力内容を、ログイン、同期、文書管理のためFirebase AuthenticationおよびCloud Firestoreに保存します。パスワードを当方が平文で閲覧・保存することはありません。アカウントと保存文書の削除は上記窓口で受け付けます。公開共有機能を利用しない限り、他の利用者には公開しません。</p></section>
+    <section class="app-policy" id="flightrecord"><h2>FlightRecord</h2><p>飛行記録アプリです。任意に入力・選択するフライト記録、位置情報、写真、端末内設定および購入状態を、記録・地図表示・写真保存・有料機能の提供のために扱います。航空・空港情報の取得・更新およびサーバー処理にはFirebase Functionsを利用します。位置情報と写真は、権限を許可した場合に限り利用します。購入はAppleが処理します。</p></section>
+    <section class="app-policy" id="zentree"><h2>ZenTree（FocusTimer）</h2><p>集中タイマーです。タイマー履歴・設定は原則として端末内に保存します。現行版は任意のローカル通知を端末で予約します。旧Expo版を利用する場合、利用状況・端末情報をFirebase AnalyticsおよびRemote Configへ、広告配信に必要な端末識別子・広告情報等をGoogle AdMobへ送信します。広告トラッキングはiOSの許可取得後に限ります。</p></section>
+    <section class="app-policy" id="haretenki"><h2>HareTenki</h2><p>気象データ閲覧アプリです。選択地点・表示設定を端末内で扱い、位置情報は地点表示のため許可時のみ取得します。気象データ・地点情報の取得、分析およびコンテンツ管理にはFirebase Firestore／Analytics、地図表示にはMapKitを利用します。Firebase Analyticsが端末・利用情報を収集する場合があります。購入状態はApple経由で確認します。</p></section>
+    <section class="app-policy" id="kasacat"><h2>KasaCat</h2><p>傘・天気案内アプリです。現在地または利用者が検索・登録した地点、通知時刻・設定を、天気予報の表示とローカル通知の予約のため端末内で扱います。天気取得にはApple WeatherKit、地図・地点検索にはMapKitを利用します。現在地は許可時のみ取得し、広告・行動分析・アカウント機能は利用しません。</p></section>
+    <section class="app-policy" id="matchdayframe"><h2>MatchDayFrame</h2><p>試合日の画像作成アプリです。利用者が選択した写真、入力した試合情報、書き出し画像を、端末内での編集・共有のために扱います。試合・会場・地図画像の配信にはFirebase Firestore／Storage／FunctionsおよびMapboxを利用し、これらの通信先には通常の通信記録（IPアドレス等）が送信されます。選択した元写真を当方サーバーにアップロードしません。</p></section>
+    <section class="app-policy" id="nomisugoroku"><h2>NomiSugoroku / NomiRoku</h2><p>リアルタイム対戦・動画クリップ共有機能を含むゲームです。対戦用の表示名、ルーム・プレイ情報、メッセージ、利用者が選択・撮影した動画・写真および音声を、対戦、共有、保存、モデレーション・不正防止のために扱います。Cloudflare Workers、Durable Objects、R2を通じて他の参加者およびクラウドに送信・保存されます。カメラ、マイク、写真へのアクセスは機能利用時の許可に限ります。公開・共有する内容に他人の個人情報を含めないでください。</p></section>
+    <section class="app-policy" id="readinglog"><h2>ReadingLog</h2><p>読書記録アプリです。書籍・読書記録、撮影した書影、端末内設定を記録機能のために扱います。カメラは書影の読み取り・登録時だけに利用します。現行Swift版ではGoogle AdMobおよびRevenueCatを利用するため、広告・端末情報および購入状態が各社に送信される場合があります。旧Expo版ではFirebaseとAdMob、通知機能を利用します。広告トラッキングはiOSで許可された場合のみ行います。</p></section>
+    <section class="app-policy" id="readrop"><h2>Readrop</h2><p>あとで読むリンク管理アプリです。共有拡張機能から受け取ったURL、タイトル、メモ、読書予定、通知設定を端末内に保存し、ローカル通知を端末上で予約します。アカウント、広告、第三者分析、クラウド同期は現行版では利用しません。リンク先を開くと、その外部サイトのポリシーが適用されます。</p></section>
+    <section class="app-policy" id="tabiplot"><h2>TabiPlot</h2><p>旅行計画・記録アプリです。メールアドレス等の認証情報、旅行計画・場所・同行者等の入力内容、位置情報、写真、連絡先（利用者が招待・選択する場合）、端末情報を、同期、地図、旅程作成、共有、広告、分析のために扱います。Firebase Authentication／Firestore／Functions／Storage／Analytics／App Check、Google AdMob、Google Maps等を利用します。位置、写真、連絡先は許可時のみ利用します。アカウントとクラウドデータの削除はアプリ内または上記窓口で受け付けます。</p></section>
+    <section class="app-policy" id="tomelog"><h2>TomeLog</h2><p>駐車位置記録アプリです。駐車位置、任意に選択した写真、メモ、通知設定を、車の位置の保存・案内のため端末内に保存します。現在地は保存・案内時、写真は利用者が選択した場合のみ取得します。地図表示にはMapKitを利用します。広告、アカウント、第三者分析、クラウド同期は現行実装では利用しません。</p></section>
+    <section class="app-policy" id="wasurena"><h2>わすれな</h2><p>リマインダーアプリです。リマインダー内容・日時・設定を端末内に保存し、ローカル通知を端末で予約します。Google AdMobによる広告表示時には、広告配信に必要な端末識別子・広告情報等がGoogleに送信される場合があります。広告トラッキングはiOSの許可を得た場合に限ります。購入状態はApple経由で扱います。</p></section>
+    <section class="app-policy" id="yohaku"><h2>Yohaku</h2><p>予定・招待管理アプリです。メールアドレス、Appleサインインで提供される識別子、プロフィール、予定・招待・参加情報、カレンダーへのアクセス結果、通知トークンを、認証、同期、招待、通知のために扱います。Firebase Authentication／Firestore／Functions／MessagingおよびCloudflareの招待処理を利用します。カレンダーは許可時のみ読み書きし、アカウントとクラウドデータの削除は上記窓口で受け付けます。</p></section>
+    <section class="app-policy" id="zaikoff"><h2>Zaikoff</h2><p>在庫管理アプリです。商品・在庫・取引の入力内容、スキャン時のカメラ映像、選択した写真・書類、通知設定を在庫管理のために扱います。現行Swift版は端末中心の保存とローカル通知を利用します。旧Expo版でアカウント機能を使用する場合は、メールアドレス・認証情報・同期データをSupabaseに保存します。カメラ、写真、書類は機能利用時に限りアクセスします。</p></section>
+    <section class="app-policy" id="goukaku-log"><h2>合格ログ</h2><p>学習記録アプリです。学習記録・目標・設定、通知設定、購入状態、端末・利用状況情報を、記録、通知、有料機能、品質改善のために扱います。Firebase Analytics、Google AdMobおよびApple App Storeを利用します。広告トラッキングはiOSで許可された場合に限ります。旧Expo版の通知・広告機能にも同様の取扱いが適用されます。</p></section>
+    <section class="app-policy" id="subscription"><h2>Subscription</h2><p>サブスクリプション管理アプリです。利用者が入力する契約名、料金、更新日、通貨、メモおよび通知設定を端末内に保存し、必要に応じてCloudKitで利用者のiCloudアカウントへバックアップします。為替レート取得時には通信先にIPアドレス等の通常の通信記録が送信されます。通知は端末上で予約します。広告・行動分析は利用しません。</p></section>
+    <section class="app-policy" id="syukatu-kanri"><h2>就活管理</h2><p>就職活動管理アプリです。応募先・選考・予定・メモ等の入力内容、カレンダー連携の対象、端末・利用状況情報を、就活管理、予定連携、品質改善のために扱います。企業マイページのID・パスワードを保存する機能では、資格情報を端末のKeychainに保存します。当方のサーバーへ送信しません。Firebase AnalyticsおよびGoogle AdMobを利用し、広告配信・分析に必要な端末情報等がGoogleに送信される場合があります。カレンダーは許可時のみ利用し、広告トラッキングはiOSの許可取得後に限ります。</p></section>
+    <section class="app-policy" id="warlet"><h2>われっと</h2><p>割り勘・グループ精算アプリです。メールアドレス、Appleサインイン識別子、表示名・プロフィール画像、グループ・メンバー・支払・領収書・メッセージ等の入力内容を、認証、グループ共有、精算、チャットのために扱います。Supabase Authentication／Database／Storage／Realtimeを利用し、同じグループの参加者には、共有に必要なプロフィール・精算・メッセージ情報が表示されます。領収書画像は選択時のみアップロードされます。アカウントと関連データはアプリ内の「アカウント削除」から削除できます。</p></section>
+    <section class="app-policy" id="asc-autotranslate"><h2>AppleStoreConnectAutotranslate</h2><p>App Store Connectのメタデータを翻訳するデスクトップ／Webツールです。利用者が入力するApp Store Connect APIキー・Issuer ID・Key ID、翻訳対象テキスト、選択したAI事業者のAPIキー、設定値を、認証、翻訳、検証、App Store Connectへの反映のために扱います。設定値は原則として利用者の端末に保存し、翻訳対象テキストと選択されたAPIキーは、利用者が指定したOpenAI、Google GeminiまたはZ.AIのAPIへ送信されます。App Store Connectの認証情報はApple APIへのリクエストにのみ使用し、当方はこれらの秘密情報を恒久保存しません。利用者は、第三者の個人情報や秘密情報を翻訳対象に含めないでください。</p></section>
+
+    <section class="app-policy" id="legal-notice"><h2>通信販売に関する表示（有料機能がある場合）</h2><table class="data-table"><tr><th>販売事業者</th><td>kizuna yoshihara</td></tr><tr><th>所在地・電話番号</th><td>上記メールアドレスへの請求があった場合、遅滞なく開示します。</td></tr><tr><th>販売価格</th><td>各App Store／Google Playの購入画面またはアプリ内ペイウォールに表示する価格（税込）です。</td></tr><tr><th>追加負担</th><td>アプリのダウンロード・利用に必要な通信料は利用者の負担です。</td></tr><tr><th>支払方法・時期</th><td>各ストアの決済手段により、購入確定時（継続課金では各更新時）に請求されます。</td></tr><tr><th>提供時期</th><td>決済完了後、直ちに提供します。</td></tr><tr><th>継続課金</th><td>表示する更新日前までにストアの手続で自動更新を停止しない限り更新されます。解約は各ストアのサブスクリプション管理画面から行えます。</td></tr><tr><th>返品・返金</th><td>デジタルコンテンツの性質上、原則として購入確定後の取消し・返品はできません。返金は各ストアの規約・手続に従います。</td></tr></table><p>この表示は、実際に有料販売を開始するプロダクトにのみ適用します。販売開始・価格変更時は、購入最終確認画面にも同じ取引条件を表示します。</p></section>
+  </main>
+</body>
+</html>
