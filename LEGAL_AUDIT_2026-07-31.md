@@ -27,6 +27,17 @@
 | 精算 | われっと | 認証、精算、画像、メッセージ | Supabase | アカウント・削除機能 |
 | 開発支援 | AppleStoreConnectAutotranslate | APIキー、翻訳対象テキスト | Apple、OpenAI/Gemini/Z.AI | 利用者のAPIキー |
 
+## 購入実装の再監査
+
+旧来の共通雛形にあった「サブスクリプション／買い切り」の文言は、各アプリの実装を再確認して、該当する4プロダクトにのみ独立ページで残しました。`StoreKit` のレビュー依頼だけを行う Currency Window と HareTenki、端末で契約を記録するだけの Subscription は、アプリ内課金を実装していないため対象から除外しています。
+
+| プロダクト | 確認した実装 | ページ上の扱い |
+|---|---|---|
+| DorePay | `Creditcard/apps/ios/DorePay/Services/SubscriptionManager.swift`：月額・年額、購入、復元 | 月額・年額のサブスクリプション規約・特商法表示 |
+| ReadingLog | `ReadingLog/readinglog/readinglog/Services/SubscriptionManager.swift`：RevenueCat購入・復元、月額／年額／買い切りの提示候補 | 購入画面に表示するプランを対象とする規約・特商法表示 |
+| 合格ログ | `goukaku-log/examlog/examlog/Services/PurchaseService.swift`：月額・年額・買い切り、購入、復元 | 3商品を明記した規約・特商法表示 |
+| FlightRecord | `FlightRecord/FlightLog/FlightLog/Support/PremiumStore.swift`：月額・年額、購入、復元 | 月額・年額のサブスクリプション規約・特商法表示 |
+
 ## 対象外
 
 ASO、AppStoreReleaseTemplate、firebase-ad、各 `Store`・スクリーンショット生成フォルダ、設計資料およびビルド生成物は、単独で利用者向けサービスを提供せず、独自の個人データ処理も確認できなかったため、公開ポリシーの対象外としました。
