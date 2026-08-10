@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="消耗品管理アプリ「Zaikoff」の利用規約です。">
+  <title>利用規約 | Zaikoff</title>
+  <style>
+    :root {
+      --ink: #171717;
+      --muted: #686868;
+      --line: #dfdfdc;
+      --paper: #fbfaf7;
+      --surface: #ffffff;
+      --accent: #d96716;
+      --accent-soft: #fff1e6;
+      --required: #fff3cd;
+      --required-border: #e7bd52;
+      --max-width: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 85% 0%, rgba(217, 103, 22, 0.08), transparent 28rem),
+        var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: #a94709;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover { color: var(--accent); }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid rgba(217, 103, 22, 0.35);
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 10;
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 6px;
+      transform: translateY(-160%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .site-header,
+    main,
+    .site-footer {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 26px 0 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 17px;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .site-nav {
+      display: flex;
+      gap: 18px;
+      font-size: 13px;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-nav a[aria-current="page"] {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    main { padding: 68px 0 84px; }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.35;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(36px, 8vw, 58px);
+      font-weight: 760;
+    }
+
+    .lead {
+      max-width: 42rem;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .affiliate-notice {
+      margin: 38px 0;
+      padding: 22px 24px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+    }
+
+    .affiliate-notice strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+    }
+
+    .affiliate-notice p { margin: 0; }
+
+    .required-field {
+      padding: 0.08em 0.35em;
+      background: var(--required);
+      border-bottom: 2px solid var(--required-border);
+      font-weight: 700;
+    }
+
+    .toc {
+      margin: 42px 0 64px;
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .toc h2 {
+      margin: 0 0 14px;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    .toc ol {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 6px 28px;
+      margin: 0;
+      padding-left: 1.4em;
+      font-size: 14px;
+    }
+
+    .toc a { color: var(--ink); }
+
+    section {
+      padding: 38px 0;
+      border-top: 1px solid var(--line);
+      scroll-margin-top: 24px;
+    }
+
+    section h2 {
+      margin: 0 0 18px;
+      font-size: clamp(23px, 5vw, 30px);
+    }
+
+    section h3 {
+      margin: 28px 0 8px;
+      font-size: 17px;
+      letter-spacing: -0.015em;
+    }
+
+    p { margin: 0 0 16px; }
+
+    ul,
+    ol { padding-left: 1.45em; }
+
+    li + li { margin-top: 7px; }
+
+    .note {
+      margin-top: 20px;
+      padding: 16px 18px;
+      color: #4f4f4f;
+      background: #f1f1ed;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      margin-top: 20px;
+      padding: 20px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .contact-card dl {
+      display: grid;
+      grid-template-columns: 7rem 1fr;
+      gap: 10px 18px;
+      margin: 0;
+    }
+
+    .contact-card dt {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .contact-card dd { margin: 0; }
+
+    .site-footer {
+      padding: 28px 0 48px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: 12px;
+    }
+
+    .site-footer p { margin: 0; }
+
+    @media (max-width: 640px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      main { padding-top: 48px; }
+
+      .toc ol { grid-template-columns: 1fr; }
+
+      .affiliate-notice,
+      .toc { padding: 19px; }
+
+      .contact-card dl { grid-template-columns: 1fr; }
+      .contact-card dd + dt { margin-top: 8px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .skip-link,
+      .site-nav,
+      .toc { display: none; }
+      .site-header,
+      main,
+      .site-footer { width: 100%; }
+      main { padding: 32px 0; }
+      section { break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="site-header">
+    <a class="brand" href="#">Zaikoff</a>
+    <nav class="site-nav" aria-label="法的情報">
+      <a href="privacy-policy.html">プライバシー</a>
+      <a href="terms-of-service.html" aria-current="page">利用規約</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+      <header>
+        <p class="eyebrow">Terms of service</p>
+        <h1>利用規約</h1>
+        <p class="lead">
+          本規約は、消耗品管理アプリ「Zaikoff」を安心して利用いただくための条件を定めるものです。
+        </p>
+        <p class="meta">
+          <span>制定日：2026年8月10日</span>
+          <span>最終改定日：2026年8月10日</span>
+        </p>
+      </header>
+
+      <aside class="affiliate-notice" aria-label="Amazonアソシエイトに関する表示">
+        <strong>Amazonアソシエイトに関する表示</strong>
+        <p>
+          Amazonのアソシエイトとして、kizuna yoshiharaは適格販売により収入を得ています。
+        </p>
+      </aside>
+
+      <nav class="toc" aria-label="目次">
+        <h2>目次</h2>
+        <ol>
+          <li><a href="#application">規約への同意と適用</a></li>
+          <li><a href="#service">本アプリの内容</a></li>
+          <li><a href="#requirements">利用環境と権限</a></li>
+          <li><a href="#data">データとバックアップ</a></li>
+          <li><a href="#amazon">Amazonアソシエイト</a></li>
+          <li><a href="#external">外部サービス上の取引</a></li>
+          <li><a href="#prohibited">禁止事項</a></li>
+          <li><a href="#rights">知的財産権</a></li>
+          <li><a href="#changes">変更・中断・終了</a></li>
+          <li><a href="#disclaimer">保証と免責</a></li>
+          <li><a href="#liability">責任の制限</a></li>
+          <li><a href="#revision">規約の変更</a></li>
+          <li><a href="#law">準拠法・裁判管轄</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ol>
+      </nav>
+
+      <section id="application">
+        <h2>第1条　規約への同意と適用</h2>
+        <ol>
+          <li>本利用規約（以下「本規約」）は、kizuna yoshihara（以下「運営者」）が提供する消耗品管理アプリ「Zaikoff」（以下「本アプリ」）の利用条件を定めます。</li>
+          <li>利用者は、本規約および別途定める<a href="privacy-policy.html">プライバシーポリシー</a>に同意したうえで本アプリを利用するものとします。</li>
+          <li>本規約と本アプリ内の個別表示が異なる場合は、個別表示に明示的な別段の定めがある場合を除き、本規約が優先します。</li>
+        </ol>
+      </section>
+
+      <section id="service">
+        <h2>第2条　本アプリの内容</h2>
+        <p>本アプリは、主に次の機能を提供します。</p>
+        <ul>
+          <li>バーコード読み取りまたは手入力による消耗品の登録</li>
+          <li>在庫状態、購入履歴、買い足し周期および買い物リストの管理</li>
+          <li>買い足し時期の予測とローカル通知</li>
+          <li>登録データのJSON・CSV形式でのエクスポート</li>
+          <li>Amazon.co.jpにおける商品検索への外部リンク</li>
+        </ul>
+        <p>
+          本アプリは、在庫管理を補助するためのツールです。商品の販売、決済、配送、返品、保証または購入契約の当事者となるものではありません。
+        </p>
+      </section>
+
+      <section id="requirements">
+        <h2>第3条　利用環境と権限</h2>
+        <ol>
+          <li>利用者は、自己の費用と責任で、本アプリを利用するために必要な端末、OS、通信環境その他の設備を用意するものとします。</li>
+          <li>バーコード読み取りにはカメラ権限が必要です。権限を許可しない場合でも、利用者は商品を手動で登録できます。</li>
+          <li>通知機能にはOSの通知権限が必要です。通知を許可しない場合も、通知以外の機能を利用できます。</li>
+          <li>Amazonへの外部リンクを利用する場合は、インターネット接続が必要です。通信料等は利用者の負担となります。</li>
+        </ol>
+      </section>
+
+      <section id="data">
+        <h2>第4条　データとバックアップ</h2>
+        <ol>
+          <li>本アプリに登録した商品、在庫、購入履歴、買い物リストおよび設定は、原則として利用者の端末内に保存されます。</li>
+          <li>本アプリは、運営者のサーバーにデータを同期する機能を提供しません。利用者は、必要に応じてエクスポート機能や端末のバックアップ機能を利用し、自らデータを保全してください。</li>
+          <li>端末の故障、紛失、機種変更、OSの更新、本アプリの削除・初期化その他の事情によりデータが失われる可能性があります。</li>
+          <li>エクスポートファイルの共有先、保管および削除は、利用者の責任で管理するものとします。</li>
+        </ol>
+      </section>
+
+      <section id="amazon">
+        <h2>第5条　Amazonアソシエイト・プログラム</h2>
+        <ol>
+          <li>本アプリには、Amazon.co.jpへ遷移するアフィリエイトリンクが含まれます。</li>
+          <li>Amazonのアソシエイトとして、kizuna yoshiharaは適格販売により収入を得ています。</li>
+          <li>当該リンクには、AmazonアソシエイトのトラッキングID「zaikoff-22」が含まれます。</li>
+          <li>利用者が当該リンクを経由して適格な商品を購入した場合、運営者がAmazonから紹介料を受け取ることがあります。</li>
+          <li>Amazonおよび関連する商標は、Amazon.com, Inc.またはその関連会社の商標です。本アプリはAmazonが運営または提供するアプリではありません。</li>
+        </ol>
+        <p class="note">
+          Amazonアソシエイト・プログラムの条件は、Amazonが定める
+          <a href="https://affiliate.amazon.co.jp/help/operating/agreement/" rel="external noopener noreferrer">運営規約</a>
+          および
+          <a href="https://affiliate.amazon.co.jp/help/operating/policies/" rel="external noopener noreferrer">プログラム・ポリシー</a>
+          に従います。
+        </p>
+      </section>
+
+      <section id="external">
+        <h2>第6条　外部サービス上の取引</h2>
+        <ol>
+          <li>本アプリからAmazon.co.jpまたはAmazonアプリへ移動した後の利用には、Amazonの利用規約、プライバシー規約その他の条件が適用されます。</li>
+          <li>商品の価格、在庫、仕様、販売者、配送、支払い、キャンセル、返品、返金および保証は、Amazonまたは各出品者が定めます。</li>
+          <li>利用者とAmazonまたは出品者との取引は、当該当事者間で成立します。運営者は、当該取引の当事者、代理人または保証人ではありません。</li>
+          <li>本アプリに表示される商品名、JANコードその他の情報とAmazon上の商品が一致することを保証しません。購入前に、利用者自身で商品内容を確認してください。</li>
+        </ol>
+      </section>
+
+      <section id="prohibited">
+        <h2>第7条　禁止事項</h2>
+        <p>利用者は、本アプリの利用にあたり、次の行為をしてはなりません。</p>
+        <ol>
+          <li>法令、公序良俗、本規約または第三者サービスの規約に違反する行為</li>
+          <li>運営者または第三者の著作権、商標権、プライバシーその他の権利を侵害する行為</li>
+          <li>本アプリの改変、リバースエンジニアリング、不正アクセスまたは正常な動作を妨げる行為。ただし、法令により認められる場合を除きます。</li>
+          <li>Amazonアソシエイトリンクを不正にクリックし、成果測定または紹介料を操作する行為</li>
+          <li>本アプリを違法、不正または有害な目的で利用する行為</li>
+          <li>その他、運営者が合理的な理由により不適切と判断する行為</li>
+        </ol>
+      </section>
+
+      <section id="rights">
+        <h2>第8条　知的財産権</h2>
+        <ol>
+          <li>本アプリ、画面デザイン、文章、プログラムその他の構成要素に関する知的財産権は、運営者または正当な権利者に帰属します。</li>
+          <li>利用者は、本規約の範囲で本アプリを個人的かつ非独占的に利用できます。本アプリに関する知的財産権が利用者へ移転するものではありません。</li>
+          <li>Amazonの名称、ロゴおよび関連する商標は、Amazon.com, Inc.またはその関連会社に帰属します。</li>
+        </ol>
+      </section>
+
+      <section id="changes">
+        <h2>第9条　本アプリの変更・中断・終了</h2>
+        <ol>
+          <li>運営者は、保守、法令・規約への対応、セキュリティ上の必要、第三者サービスの変更その他の合理的な理由により、本アプリの全部または一部を変更、中断または終了することがあります。</li>
+          <li>重要な変更または終了については、可能な範囲で本アプリ内または本ページにより事前にお知らせします。ただし、緊急の場合はこの限りではありません。</li>
+          <li>利用者は、本アプリをアンインストールすることで、いつでも利用を終了できます。</li>
+        </ol>
+      </section>
+
+      <section id="disclaimer">
+        <h2>第10条　保証と免責</h2>
+        <ol>
+          <li>運営者は、本アプリの正確性、完全性、有用性、特定目的への適合性、継続性、エラーや不具合がないことを保証しません。</li>
+          <li>在庫状態、買い足し時期および通知予定は、利用者が登録した情報と端末内の計算に基づく目安です。実際の残量、消費速度または購入の必要時期を保証するものではありません。</li>
+          <li>バーコードの読み取り結果、商品名、カテゴリおよび検索結果が正確または最新であることを保証しません。</li>
+          <li>通知は、OSの設定、端末の状態、省電力設定その他の事情により、予定どおり表示されないことがあります。</li>
+          <li>Amazonその他の外部サービスの内容、可用性、安全性および取引結果について、運営者は保証しません。</li>
+        </ol>
+      </section>
+
+      <section id="liability">
+        <h2>第11条　責任の制限</h2>
+        <ol>
+          <li>運営者の故意または重過失による場合を除き、本アプリの利用または利用不能により生じた損害について、運営者は責任を負いません。</li>
+          <li>前項が適用されない場合であっても、運営者の軽過失により利用者に生じた損害について、運営者は通常かつ直接の損害の範囲で責任を負い、特別損害、間接損害、逸失利益およびデータ喪失について責任を負いません。ただし、適用法令によりこの制限が認められない場合を除きます。</li>
+          <li>本条は、消費者契約法その他の強行法規により認められない範囲では適用されません。</li>
+        </ol>
+      </section>
+
+      <section id="revision">
+        <h2>第12条　本規約の変更</h2>
+        <ol>
+          <li>運営者は、法令の変更、本アプリの機能変更その他の必要に応じて、本規約を変更することがあります。</li>
+          <li>利用者への影響が重要な変更については、変更内容と発効日を、本ページまたは本アプリ内の適切な方法でお知らせします。</li>
+          <li>変更後に利用者が本アプリを利用した場合、法令上別途の同意が必要な場合を除き、変更後の本規約に同意したものとみなします。</li>
+        </ol>
+      </section>
+
+      <section id="privacy">
+        <h2>第13条　プライバシー</h2>
+        <p>
+          本アプリにおける情報の取扱いは、<a href="privacy-policy.html">プライバシーポリシー</a>に従います。利用者は、本アプリの利用前に同ポリシーをご確認ください。
+        </p>
+      </section>
+
+      <section id="severability">
+        <h2>第14条　分離可能性</h2>
+        <p>
+          本規約のいずれかの条項またはその一部が法令により無効または執行不能と判断された場合でも、残りの条項は引き続き有効に存続します。
+        </p>
+      </section>
+
+      <section id="law">
+        <h2>第15条　準拠法・裁判管轄</h2>
+        <ol>
+          <li>本規約は日本法に準拠し、日本法に従って解釈されます。</li>
+          <li>本アプリまたは本規約に関して紛争が生じた場合、法令に別段の定めがある場合を除き、運営者の所在地を管轄する日本の地方裁判所を第一審の専属的合意管轄裁判所とします。</li>
+        </ol>
+      </section>
+
+      <section id="contact">
+        <h2>第16条　お問い合わせ</h2>
+        <p>本アプリまたは本規約に関するお問い合わせは、次の窓口へご連絡ください。</p>
+        <div class="contact-card">
+          <dl>
+            <dt>運営者</dt>
+            <dd>kizuna yoshihara</dd>
+            <dt>メール</dt>
+            <dd><a href="mailto:kyoshihara0411@gmail.com">kyoshihara0411@gmail.com</a></dd>
+          </dl>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Zaikoff. 本ページは日本語版を正文とします。</p>
+  </footer>
+</body>
+</html>
