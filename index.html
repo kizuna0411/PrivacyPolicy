@@ -1,31 +1,317 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kizuna Appsが個人開発するアプリのプロダクト一覧。暮らし、旅、記録、学習の小さな迷いを減らすアプリを紹介します。">
+  <meta name="theme-color" content="#fbfcfa">
+  <title>Kizuna Apps | 個人開発プロダクト</title>
+  <link rel="icon" href="./showcase/assets/dorepay/icon.jpg">
+  <link rel="stylesheet" href="./showcase/styles.css">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>アプリ情報一覧</title>
-  <link rel="stylesheet" href="css/style.css" />
+
 </head>
+<body class="home-page">
+  <a class="skip-link" href="#products">アプリ一覧へ移動</a>
 
-<body>
-  <div class="container">
-    <h1>アプリ情報一覧</h1>
-    <p>各アプリのデータ処理・外部送信・アカウント削除・有料販売に関する表示は、実装を確認して更新したプロダクト別ページをご確認ください。</p>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="./" aria-label="Kizuna Apps ホーム"><span class="brand-mark">K</span><span>Kizuna Apps</span></a>
+      <a class="index-link" href="./policy.html#legal-notice">Legal <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-    <h2>プライバシーポリシー</h2>
-    <ul>
-      <li><a href="products/dorepay/">DorePay</a> / <a href="products/currency-window/">Currency Window</a> / <a href="products/dokoiku/">DokoIku</a> / <a href="products/eswriter/">ESWriter</a></li>
-      <li><a href="products/flightrecord/">FlightRecord</a> / <a href="products/zentree/">ZenTree</a> / <a href="products/haretenki/">HareTenki</a> / <a href="products/kasacat/">KasaCat</a></li>
-      <li><a href="products/matchdayframe/">MatchDayFrame</a> / <a href="products/nomisugoroku/">NomiSugoroku</a> / <a href="products/readinglog/">ReadingLog</a> / <a href="products/readrop/">Readrop</a></li>
-      <li><a href="products/tabiplot/">TabiPlot</a> / <a href="products/tomelog/">TomeLog</a> / <a href="products/wasurena/">わすれな</a> / <a href="products/yohaku/">Yohaku</a></li>
-      <li><a href="products/zaikoff/">Zaikoff</a> / <a href="products/goukaku-log/">合格ログ</a> / <a href="products/subscription/">Subscription</a> / <a href="products/syukatu-kanri/">就活管理</a> / <a href="products/warlet/">われっと</a></li>
-      <li><a href="products/asc-autotranslate/">AppleStoreConnectAutotranslate</a></li>
-    </ul>
-    <p><a href="policy.html#legal-notice">通信販売に関する表示</a></p>
+  <main>
+    <section class="home-hero" id="about">
+      <div class="page-shell home-hero-grid enter">
+        <div>
+          <p class="eyebrow">Independent products from Japan</p>
+          <h1>日々の迷いを、<br>小さくする。</h1>
+        </div>
+        <div class="hero-side">
+          <p>支払い、旅、学習、記録。毎日の中にある「少し面倒」を見つけ、すぐ使えて、静かに役立つプロダクトへ変えています。</p>
+          <span class="hero-count" data-product-count="">24 PRODUCTS</span>
+        </div>
+      </div>
+    </section>
 
-    <footer>&copy; 2026 Kizuna0411 All Rights Reserved.</footer>
-  </div>
-</body>
+    <section class="index-section" id="products">
+      <div class="section-shell">
+        <div class="index-heading">
+          <div><p class="eyebrow">Product index</p><h2>作っているもの。</h2></div>
+          <p>公開中のアプリから開発中のプロトタイプまで。実装済みの機能と実際の画面をもとに、それぞれの個性で紹介します。</p>
+        </div>
+        <div class="filters" data-filters="" aria-label="カテゴリーで絞り込む">
+  <button class="filter-button is-active" type="button" data-category="すべて" aria-pressed="true">すべて</button>
+  <button class="filter-button" type="button" data-category="暮らし" aria-pressed="false">暮らし</button>
+  <button class="filter-button" type="button" data-category="ツール" aria-pressed="false">ツール</button>
+  <button class="filter-button" type="button" data-category="おでかけ" aria-pressed="false">おでかけ</button>
+  <button class="filter-button" type="button" data-category="仕事・学習" aria-pressed="false">仕事・学習</button>
+  <button class="filter-button" type="button" data-category="記録" aria-pressed="false">記録</button>
+  <button class="filter-button" type="button" data-category="天気" aria-pressed="false">天気</button>
+  <button class="filter-button" type="button" data-category="写真" aria-pressed="false">写真</button>
+  <button class="filter-button" type="button" data-category="ゲーム" aria-pressed="false">ゲーム</button>
+  <button class="filter-button" type="button" data-category="予定" aria-pressed="false">予定</button>
+  <button class="filter-button" type="button" data-category="開発ツール" aria-pressed="false">開発ツール</button></div>
+        <div class="app-index" data-app-grid="" aria-live="polite">
+    <article class="index-product" data-family="workbench" data-category="暮らし" style="--app-accent:var(--accent-dorepay)">
+      <a class="index-product-link" href="./apps/dorepay/" aria-label="DorePayのプロダクトページを見る">
+        <span class="index-number">01</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/dorepay/icon.jpg" width="72" height="72" alt="DorePayのアプリアイコン" loading="lazy"><div><h3>DorePay</h3><p>ドレペイ</p></div></div>
+        <div class="index-copy"><p>選ぶ時間を、得する時間に。</p><span>暮らし · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/dorepay/screen-1.png" width="1206" height="2622" alt="DorePayの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="workbench" data-category="ツール" style="--app-accent:var(--accent-currency)">
+      <a class="index-product-link" href="./apps/currency-window/" aria-label="Currency Windowのプロダクトページを見る">
+        <span class="index-number">02</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/currency-window/icon.jpg" width="72" height="72" alt="Currency Windowのアプリアイコン" loading="lazy"><div><h3>Currency Window</h3><p>カレンシー・ウィンドウ</p></div></div>
+        <div class="index-copy"><p>海外で払う金額を、迷わない。</p><span>ツール · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/currency-window/screen-1.png" width="1206" height="2622" alt="Currency Windowの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="catalogue" data-category="おでかけ" style="--app-accent:var(--accent-dokoiku)">
+      <a class="index-product-link" href="./apps/dokoiku/" aria-label="どこ行く？のプロダクトページを見る">
+        <span class="index-number">03</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/dokoiku/icon.png" width="72" height="72" alt="どこ行く？のアプリアイコン" loading="lazy"><div><h3>どこ行く？</h3><p>DokoIku</p></div></div>
+        <div class="index-copy"><p>行きたい場所を、次の予定に。</p><span>おでかけ · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/dokoiku/screen-1.png" width="1206" height="2622" alt="どこ行く？の画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="document" data-category="仕事・学習" style="--app-accent:var(--accent-eswriter)">
+      <a class="index-product-link" href="./apps/eswriter/" aria-label="ESWriterのプロダクトページを見る">
+        <span class="index-number">04</span>
+        <div class="index-name"><span class="index-icon icon-letter" aria-hidden="true">E</span><div><h3>ESWriter</h3><p>イーエスライター</p></div></div>
+        <div class="index-copy"><p>書いたESを、次の応募へ。</p><span>仕事・学習 · iPhone / Web</span></div>
+        <div class="index-visual index-visual-empty"><span class="index-icon icon-letter" aria-hidden="true">E</span><span>APPLICATION EDITOR</span></div>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="document" data-category="記録" style="--app-accent:var(--accent-flightrecord)">
+      <a class="index-product-link" href="./apps/flightrecord/" aria-label="FlightLogのプロダクトページを見る">
+        <span class="index-number">05</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/flightrecord/icon.png" width="72" height="72" alt="FlightLogのアプリアイコン" loading="lazy"><div><h3>FlightLog</h3><p>FlightRecord</p></div></div>
+        <div class="index-copy"><p>飛んだ記憶を、航路に残す。</p><span>記録 · iPhone</span></div>
+        <div class="index-visual index-visual-empty"><img class="index-icon" src="./showcase/assets/flightrecord/icon.png" width="72" height="72" alt="FlightLogのアプリアイコン" loading="lazy"><span>FLIGHT ARCHIVE</span></div>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="marquee" data-category="仕事・学習" style="--app-accent:var(--accent-zentree)">
+      <a class="index-product-link" href="./apps/zentree/" aria-label="Focus Plantのプロダクトページを見る">
+        <span class="index-number">06</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/zentree/icon.png" width="72" height="72" alt="Focus Plantのアプリアイコン" loading="lazy"><div><h3>Focus Plant</h3><p>ZenTree</p></div></div>
+        <div class="index-copy"><p>集中した時間が、静かに育つ。</p><span>仕事・学習 · iPhone</span></div>
+        <div class="index-visual index-visual-empty"><img class="index-icon" src="./showcase/assets/zentree/icon.png" width="72" height="72" alt="Focus Plantのアプリアイコン" loading="lazy"><span>FOCUS GARDEN</span></div>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="photographic" data-category="天気" style="--app-accent:var(--accent-haretenki)">
+      <a class="index-product-link" href="./apps/haretenki/" aria-label="HareBiyoriのプロダクトページを見る">
+        <span class="index-number">07</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/haretenki/icon.jpg" width="72" height="72" alt="HareBiyoriのアプリアイコン" loading="lazy"><div><h3>HareBiyori</h3><p>HareTenki</p></div></div>
+        <div class="index-copy"><p>晴れやすい日を、旅の味方に。</p><span>天気 · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/haretenki/screen-1.png" width="1206" height="2622" alt="HareBiyoriの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="photographic" data-category="天気" style="--app-accent:var(--accent-kasacat)">
+      <a class="index-product-link" href="./apps/kasacat/" aria-label="KasaCatのプロダクトページを見る">
+        <span class="index-number">08</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/kasacat/icon.jpg" width="72" height="72" alt="KasaCatのアプリアイコン" loading="lazy"><div><h3>KasaCat</h3><p>カサキャット</p></div></div>
+        <div class="index-copy"><p>傘がいる日を、猫が教える。</p><span>天気 · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/kasacat/screen-1.png" width="1206" height="2622" alt="KasaCatの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="document" data-category="写真" style="--app-accent:var(--accent-matchdayframe)">
+      <a class="index-product-link" href="./apps/matchdayframe/" aria-label="MatchDayFrameのプロダクトページを見る">
+        <span class="index-number">09</span>
+        <div class="index-name"><span class="index-icon icon-letter" aria-hidden="true">M</span><div><h3>MatchDayFrame</h3><p>マッチデーフレーム</p></div></div>
+        <div class="index-copy"><p>試合の一枚に、記憶を重ねる。</p><span>写真 · iPhone</span></div>
+        <div class="index-visual index-visual-empty"><span class="index-icon icon-letter" aria-hidden="true">M</span><span>MATCHDAY POSTER</span></div>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="marquee" data-category="ゲーム" style="--app-accent:var(--accent-nomisugoroku)">
+      <a class="index-product-link" href="./apps/nomisugoroku/" aria-label="のみろくのプロダクトページを見る">
+        <span class="index-number">10</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/nomisugoroku/icon.png" width="72" height="72" alt="のみろくのアプリアイコン" loading="lazy"><div><h3>のみろく</h3><p>NomiRoku</p></div></div>
+        <div class="index-copy"><p>次の一杯は、サイコロの先に。</p><span>ゲーム · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/nomisugoroku/screen-1.png" width="1206" height="2622" alt="のみろくの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="catalogue" data-category="記録" style="--app-accent:var(--accent-readinglog)">
+      <a class="index-product-link" href="./apps/readinglog/" aria-label="ReadingLogのプロダクトページを見る">
+        <span class="index-number">11</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/readinglog/icon.jpg" width="72" height="72" alt="ReadingLogのアプリアイコン" loading="lazy"><div><h3>ReadingLog</h3><p>リーディングログ</p></div></div>
+        <div class="index-copy"><p>読んだ時間が、習慣になる。</p><span>記録 · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/readinglog/screen-1.jpg" width="1206" height="2622" alt="ReadingLogの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="workflow" data-category="仕事・学習" style="--app-accent:var(--accent-readrop)">
+      <a class="index-product-link" href="./apps/readrop/" aria-label="Readropのプロダクトページを見る">
+        <span class="index-number">12</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/readrop/icon.png" width="72" height="72" alt="Readropのアプリアイコン" loading="lazy"><div><h3>Readrop</h3><p>リードロップ</p></div></div>
+        <div class="index-copy"><p>あとで読むを、忘れない。</p><span>仕事・学習 · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/readrop/screen-1.png" width="1206" height="2622" alt="Readropの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="photographic" data-category="おでかけ" style="--app-accent:var(--accent-tabiplot)">
+      <a class="index-product-link" href="./apps/tabiplot/" aria-label="TabiPlotのプロダクトページを見る">
+        <span class="index-number">13</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/tabiplot/icon.png" width="72" height="72" alt="TabiPlotのアプリアイコン" loading="lazy"><div><h3>TabiPlot</h3><p>タビプロット</p></div></div>
+        <div class="index-copy"><p>旅の予定を、地図に描く。</p><span>おでかけ · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/tabiplot/screen-1.png" width="1206" height="2622" alt="TabiPlotの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="photographic" data-category="おでかけ" style="--app-accent:var(--accent-tomelog)">
+      <a class="index-product-link" href="./apps/tomelog/" aria-label="TomeLogのプロダクトページを見る">
+        <span class="index-number">14</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/tomelog/icon.jpg" width="72" height="72" alt="TomeLogのアプリアイコン" loading="lazy"><div><h3>TomeLog</h3><p>トメログ</p></div></div>
+        <div class="index-copy"><p>停めた場所を、もう探さない。</p><span>おでかけ · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/tomelog/screen-1.png" width="1206" height="2622" alt="TomeLogの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="workflow" data-category="暮らし" style="--app-accent:var(--accent-wasurena)">
+      <a class="index-product-link" href="./apps/wasurena/" aria-label="わすれなのプロダクトページを見る">
+        <span class="index-number">15</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/wasurena/icon.png" width="72" height="72" alt="わすれなのアプリアイコン" loading="lazy"><div><h3>わすれな</h3><p>Wasurena</p></div></div>
+        <div class="index-copy"><p>思いついた言葉を、そのまま予定に。</p><span>暮らし · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/wasurena/screen-1.jpg" width="1206" height="2622" alt="わすれなの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="map" data-category="予定" style="--app-accent:var(--accent-yohaku)">
+      <a class="index-product-link" href="./apps/yohaku/" aria-label="Yohakuのプロダクトページを見る">
+        <span class="index-number">16</span>
+        <div class="index-name"><span class="index-icon icon-letter" aria-hidden="true">Y</span><div><h3>Yohaku</h3><p>ヨハク</p></div></div>
+        <div class="index-copy"><p>予定の中に、余白を見つける。</p><span>予定 · iPhone / iPad</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/yohaku/screen-1.png" width="1206" height="2622" alt="Yohakuの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="catalogue" data-category="暮らし" style="--app-accent:var(--accent-zaikoff)">
+      <a class="index-product-link" href="./apps/zaikoff/" aria-label="Zaikoffのプロダクトページを見る">
+        <span class="index-number">17</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/zaikoff/icon.png" width="72" height="72" alt="Zaikoffのアプリアイコン" loading="lazy"><div><h3>Zaikoff</h3><p>ザイコフ</p></div></div>
+        <div class="index-copy"><p>なくなる前に、気づける在庫管理。</p><span>暮らし · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/zaikoff/screen-1.png" width="1206" height="2622" alt="Zaikoffの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="catalogue" data-category="仕事・学習" style="--app-accent:var(--accent-goukaku-log)">
+      <a class="index-product-link" href="./apps/goukaku-log/" aria-label="合格ログのプロダクトページを見る">
+        <span class="index-number">18</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/goukaku-log/icon.png" width="72" height="72" alt="合格ログのアプリアイコン" loading="lazy"><div><h3>合格ログ</h3><p>Goukaku Log</p></div></div>
+        <div class="index-copy"><p>試験日までの努力を、見える形に。</p><span>仕事・学習 · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/goukaku-log/screen-1.png" width="1206" height="2622" alt="合格ログの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="workbench" data-category="暮らし" style="--app-accent:var(--accent-subscription)">
+      <a class="index-product-link" href="./apps/subscription/" aria-label="Subscription Managerのプロダクトページを見る">
+        <span class="index-number">19</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/subscription/icon.jpg" width="72" height="72" alt="Subscription Managerのアプリアイコン" loading="lazy"><div><h3>Subscription Manager</h3><p>サブスクリプション管理</p></div></div>
+        <div class="index-copy"><p>毎月の固定費を、通貨をまたいで。</p><span>暮らし · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/subscription/screen-1.png" width="1206" height="2622" alt="Subscription Managerの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="workbench" data-category="仕事・学習" style="--app-accent:var(--accent-syukatu-kanri)">
+      <a class="index-product-link" href="./apps/syukatu-kanri/" aria-label="就活マネージャーのプロダクトページを見る">
+        <span class="index-number">20</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/syukatu-kanri/icon.png" width="72" height="72" alt="就活マネージャーのアプリアイコン" loading="lazy"><div><h3>就活マネージャー</h3><p>就活管理</p></div></div>
+        <div class="index-copy"><p>選考の次を、迷わない。</p><span>仕事・学習 · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/syukatu-kanri/screen-1.png" width="1206" height="2622" alt="就活マネージャーの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="workflow" data-category="暮らし" style="--app-accent:var(--accent-warlet)">
+      <a class="index-product-link" href="./apps/warlet/" aria-label="われっとのプロダクトページを見る">
+        <span class="index-number">21</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/warlet/icon.png" width="72" height="72" alt="われっとのアプリアイコン" loading="lazy"><div><h3>われっと</h3><p>Warlet</p></div></div>
+        <div class="index-copy"><p>立て替えたお金を、気まずくしない。</p><span>暮らし · iOS / Android / Web</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/warlet/screen-1.jpeg" width="1206" height="2622" alt="われっとの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="document" data-category="開発ツール" style="--app-accent:var(--accent-asc)">
+      <a class="index-product-link" href="./apps/asc-autotranslate/" aria-label="App Store Connect Auto Translateのプロダクトページを見る">
+        <span class="index-number">22</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/asc-autotranslate/icon.svg" width="72" height="72" alt="App Store Connect Auto Translateのアプリアイコン" loading="lazy"><div><h3>App Store Connect Auto Translate</h3><p>ASC Workspace</p></div></div>
+        <div class="index-copy"><p>ストア文言を、世界へ届ける。</p><span>開発ツール · Desktop / Web</span></div>
+        <div class="index-visual index-visual-empty"><img class="index-icon" src="./showcase/assets/asc-autotranslate/icon.svg" width="72" height="72" alt="App Store Connect Auto Translateのアプリアイコン" loading="lazy"><span>LOCALIZATION WORKSPACE</span></div>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="marquee" data-category="ゲーム" style="--app-accent:var(--accent-flickrush)">
+      <a class="index-product-link" href="./apps/flickrush/" aria-label="Flick Rushのプロダクトページを見る">
+        <span class="index-number">23</span>
+        <div class="index-name"><img class="index-icon" src="./showcase/assets/flickrush/icon.png" width="72" height="72" alt="Flick Rushのアプリアイコン" loading="lazy"><div><h3>Flick Rush</h3><p>フリックラッシュ</p></div></div>
+        <div class="index-copy"><p>60秒、指先が走り出す。</p><span>ゲーム · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/flickrush/screen-1.png" width="1206" height="2622" alt="Flick Rushの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article>
+    <article class="index-product" data-family="map" data-category="暮らし" style="--app-accent:var(--accent-irumaru)">
+      <a class="index-product-link" href="./apps/irumaru/" aria-label="irumaruのプロダクトページを見る">
+        <span class="index-number">24</span>
+        <div class="index-name"><span class="index-icon icon-letter" aria-hidden="true">i</span><div><h3>irumaru</h3><p>イルマル</p></div></div>
+        <div class="index-copy"><p>言葉にしなくても、元気は伝わる。</p><span>暮らし · iPhone</span></div>
+        <figure class="index-visual"><img src="./showcase/assets/irumaru/screen-1.png" width="1206" height="2622" alt="irumaruの画面" loading="lazy"></figure>
+        <span class="index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </article></div>
+      </div>
+    </section>
 
-</html>
+    <aside class="legal-strip">
+      <div class="section-shell">
+        <p>データの扱い、外部送信、アカウント削除などは、アプリ別のプライバシー情報にまとめています。</p>
+        <a class="text-link" href="./products/dorepay/">プライバシー情報の例を見る</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p class="footer-statement">小さな不便から、<br>次のプロダクトへ。</p>
+      <nav aria-label="フッターナビゲーション">
+        <a href="#products">すべてのアプリ</a>
+        <a href="./products/dorepay/">プライバシー情報</a>
+        <a href="./policy.html#legal-notice">通信販売に関する表示</a>
+      </nav>
+    </div>
+  </footer>
+
+
+
+
+<script>(() => {
+  const filters = document.querySelector("[data-filters]");
+  const count = document.querySelector("[data-product-count]");
+  if (!filters) return;
+  filters.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-category]");
+    if (!button) return;
+    filters.querySelectorAll("[data-category]").forEach((item) => {
+      const active = item === button;
+      item.classList.toggle("is-active", active);
+      item.setAttribute("aria-pressed", String(active));
+    });
+    let visible = 0;
+    document.querySelectorAll(".index-product").forEach((product) => {
+      const show = button.dataset.category === "すべて" || product.dataset.category === button.dataset.category;
+      product.hidden = !show;
+      if (show) visible += 1;
+    });
+    if (count) count.textContent = visible + " PRODUCTS";
+  });
+})();</script></body></html>

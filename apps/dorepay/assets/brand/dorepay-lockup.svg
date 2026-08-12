@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="160" viewBox="0 0 760 160" role="img" aria-labelledby="title">
+  <title id="title">DorePay</title>
+  <image href="app-icon.jpg" x="8" y="8" width="144" height="144" preserveAspectRatio="xMidYMid slice" />
+  <text x="188" y="119" fill="#071A35" font-family="Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="108" font-weight="400" letter-spacing="-4.5">DorePay</text>
+</svg>

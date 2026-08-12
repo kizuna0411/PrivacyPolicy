@@ -1,0 +1,10 @@
+{
+  "date": "2026-08-12",
+  "framework": "vanilla HTML, CSS, ES modules",
+  "font_stack": "previously platform fonts; replaced by locked display/body/mono pairing",
+  "palette": "previously warm paper with automatic dark mode; replaced by white-fixed shared paper and per-product accent",
+  "motion": "CSS transitions and scroll listener; redesign uses load-once motion and no scroll listener",
+  "spacing": "4-point named scale",
+  "preserve": ["route slugs", "product copy intent", "real assets", "App Store links", "privacy links"],
+  "retire": ["one shared hero for every product", "dark theme", "fake device framing", "repeated feature rows"]
+}

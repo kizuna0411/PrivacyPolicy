@@ -1,0 +1,96 @@
+/* Hallmark tokens · custom white multi-brand system · design.md */
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap");
+
+:root {
+  --color-paper: oklch(98.8% 0.004 240);
+  --color-paper-2: oklch(96.5% 0.006 240);
+  --color-paper-3: oklch(93.5% 0.008 240);
+  --color-ink: oklch(20% 0.012 250);
+  --color-ink-2: oklch(42% 0.012 250);
+  --color-muted: oklch(46% 0.01 250);
+  --color-rule: oklch(88% 0.008 240);
+  --color-rule-strong: oklch(76% 0.01 240);
+  --color-rule-2: var(--color-rule-strong);
+  --color-neutral: oklch(36% 0.012 250);
+  --color-accent: oklch(54% 0.14 155);
+  --color-accent-ink: oklch(98.8% 0.004 240);
+  --color-focus: oklch(42% 0.12 250);
+  --color-shadow: oklch(24% 0.012 250 / 0.12);
+
+  --accent-home: oklch(50% 0.08 155);
+  --accent-dorepay: oklch(48% 0.12 155);
+  --accent-currency: oklch(50% 0.14 245);
+  --accent-dokoiku: oklch(56% 0.13 55);
+  --accent-eswriter: oklch(50% 0.12 275);
+  --accent-flightrecord: oklch(52% 0.14 230);
+  --accent-zentree: oklch(52% 0.16 285);
+  --accent-haretenki: oklch(56% 0.14 80);
+  --accent-kasacat: oklch(55% 0.13 35);
+  --accent-matchdayframe: oklch(48% 0.14 155);
+  --accent-nomisugoroku: oklch(48% 0.14 35);
+  --accent-readinglog: oklch(50% 0.12 155);
+  --accent-readrop: oklch(54% 0.18 35);
+  --accent-tabiplot: oklch(54% 0.12 65);
+  --accent-tomelog: oklch(48% 0.09 55);
+  --accent-wasurena: oklch(54% 0.14 350);
+  --accent-yohaku: oklch(52% 0.08 175);
+  --accent-zaikoff: oklch(56% 0.16 65);
+  --accent-goukaku-log: oklch(55% 0.17 55);
+  --accent-subscription: oklch(40% 0.02 250);
+  --accent-syukatu-kanri: oklch(42% 0.08 250);
+  --accent-warlet: oklch(46% 0.09 250);
+  --accent-asc: oklch(50% 0.16 285);
+  --accent-flickrush: oklch(54% 0.19 30);
+  --accent-irumaru: oklch(48% 0.09 145);
+
+  --font-display: "BIZ UDPGothic", "Hiragino Sans", sans-serif;
+  --font-body: "IBM Plex Sans JP", "Yu Gothic", sans-serif;
+  --font-outlier: "IBM Plex Mono", monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+  --space-5xl: 12rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.953rem;
+  --text-2xl: 2.441rem;
+  --text-3xl: 3.052rem;
+  --text-display-small: clamp(2.4rem, 4.7vw, 4.4rem);
+  --text-display: clamp(2.75rem, 6vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hair: 1px;
+  --rule-fine: 2px;
+  --radius-sm: 8px;
+  --radius-control: 12px;
+  --radius-media: 20px;
+  --radius-round: 999px;
+  --radius-card: var(--radius-media);
+  --radius-pill: var(--radius-round);
+  --radius-input: var(--radius-control);
+  --shadow-card: 0 22px 64px var(--color-shadow);
+
+  --z-base: 1;
+  --z-raised: 10;
+  --z-sticky: 200;
+  --z-sticky-nav: 300;
+  --z-modal: 400;
+}
