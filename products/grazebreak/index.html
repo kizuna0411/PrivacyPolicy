@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | GRAZE BREAK</title>
+  <style>
+    :root {
+      --bg: #05070d;
+      --card: #0c111d;
+      --border: rgba(61, 242, 255, 0.25);
+      --cyan: #3df2ff;
+      --magenta: #ff2bd6;
+      --text: #edf4ff;
+      --muted: #9aa7bd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(rgba(61, 242, 255, 0.04) 1px, transparent 1px) 0 0 / 28px 28px,
+        linear-gradient(90deg, rgba(61, 242, 255, 0.04) 1px, transparent 1px) 0 0 / 28px 28px,
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", sans-serif;
+      line-height: 1.75;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      margin-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .brand {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--cyan);
+      text-decoration: none;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .lang-switch button {
+      background: #080c16;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: var(--cyan);
+      color: #05070d;
+      border-color: var(--cyan);
+    }
+    h1 {
+      margin: 8px 0 6px;
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    .updated {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 17px;
+      color: var(--cyan);
+    }
+    p, li {
+      font-size: 14.5px;
+      color: #dbe5f5;
+      margin: 0 0 10px;
+    }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { padding-left: 20px; margin: 0 0 10px; }
+    a { color: var(--cyan); }
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+      border-left: 3px solid var(--magenta);
+      padding-left: 12px;
+      margin-top: 10px;
+    }
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { margin: 0 10px; }
+    [data-lang] { display: none; }
+    body.lang-en [data-lang="en"] { display: block; }
+    body.lang-ja [data-lang="ja"] { display: block; }
+  </style>
+</head>
+<body class="lang-en">
+  <main class="wrap">
+    <header>
+      <div>
+        <a class="brand" href="./index.html">GRAZE BREAK</a>
+        <h1 data-lang="en">Privacy Policy</h1>
+        <h1 data-lang="ja">プライバシーポリシー</h1>
+        <div class="updated" data-lang="en">Last Updated: November 21, 2026</div>
+        <div class="updated" data-lang="ja">最終更新日：2026年11月21日</div>
+      </div>
+      <div class="lang-switch">
+        <button id="btn-en" onclick="setLang('en')">English</button>
+        <button id="btn-ja" onclick="setLang('ja')">日本語</button>
+      </div>
+    </header>
+
+    <div data-lang="en">
+      <section>
+        <h2>1. Overview</h2>
+        <p>The iOS application "GRAZE BREAK" (the "App") respects your privacy and is committed to protecting personal information. The App does not require account registration or login, and the developer does not collect or store directly identifiable personal data (such as your name, email address, or street address) on any proprietary server.</p>
+        <p>Your game progress (scores, coins, unlocked stages, pilots, upgrades, and settings) is stored locally on your device only.</p>
+      </section>
+
+      <section>
+        <h2>2. Third-Party Services & Data Collected</h2>
+        <p>The App uses the following third-party services (SDKs) to deliver advertisements, analyze gameplay usage, provide leaderboards, and process in-app purchases. These services may automatically collect and process device identifiers, advertising data, approximate location, in-app interactions, and crash/diagnostic data.</p>
+        <ul>
+          <li>
+            <strong>Google AdMob (Google LLC)</strong>: Used to serve and measure banner, interstitial, and rewarded advertisements.<br />
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> /
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob uses data</a>
+          </li>
+          <li>
+            <strong>Firebase Analytics (Google LLC)</strong>: Used for anonymous usage statistics to track stage progression, improve game balance, and diagnose issues.<br />
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and Security in Firebase</a>
+          </li>
+          <li>
+            <strong>Apple Game Center (Apple Inc.)</strong>: Used when you choose to sign in, to display leaderboards (BLITZ / FULL RUN / DAILY / PROTOCOL) and submit scores.<br />
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>
+          </li>
+          <li>
+            <strong>Apple StoreKit (In-App Purchase)</strong>: Used to process and restore the one-time "Ad-Free Pack" purchase. Payment information is handled exclusively by Apple and is never accessible to the developer.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. App Tracking Transparency (ATT)</h2>
+        <p>To deliver relevant advertisements, the App displays Apple's App Tracking Transparency (ATT) prompt once after your first launch.</p>
+        <p>You can play the full game even if you choose "Ask App Not to Track"—non-personalized ads will be shown instead. You can change your tracking preference anytime in iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</p>
+        <p class="note">If you purchase the one-time "Ad-Free Pack", banner and interstitial ads are removed and the tracking prompt is no longer shown.</p>
+      </section>
+
+      <section>
+        <h2>4. Children's Privacy</h2>
+        <p>The App is not directed toward children under 13 years of age. We do not knowingly collect personal information from children under 13 without parental consent.</p>
+      </section>
+
+      <section>
+        <h2>5. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time due to legal changes or app updates. Any significant changes will be posted on this page.</p>
+      </section>
+
+      <section>
+        <h2>6. Contact</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <p>
+          Developer: GRAZE BREAK Team<br />
+          Email: <a href="mailto:kyoshihara0411@gmail.com">kyoshihara0411@gmail.com</a>
+        </p>
+      </section>
+    </div>
+
+    <div data-lang="ja">
+      <section>
+        <h2>1. 基本方針</h2>
+        <p>iOS アプリ「GRAZE BREAK」（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本アプリはアカウント登録やログインを必要とせず、開発者が独自サーバーへ氏名・メールアドレス・住所等の個人を直接特定できる情報を収集・保存することはありません。</p>
+        <p>ゲームの進行状況（スコア・コイン・解放済みステージ・機体・強化内容・設定）はお使いの端末内にのみ保存されます。</p>
+      </section>
+
+      <section>
+        <h2>2. 第三者サービスの利用と収集される情報</h2>
+        <p>本アプリは、広告配信・利用状況の分析・ランキング機能・アプリ内課金の提供のため、以下の第三者サービス（SDK）を利用しています。これらのサービスにより、デバイス識別子、広告データ、おおよその位置情報、アプリ内の操作・プレイ履歴、クラッシュ・診断情報などが自動的に送信・処理される場合があります。</p>
+        <ul>
+          <li>
+            <strong>Google AdMob（Google LLC）</strong>：バナー広告、インタースティシャル広告、リワード広告の配信および成果測定のために利用します。<br />
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a> ／
+            <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob におけるデータの取り扱い</a>
+          </li>
+          <li>
+            <strong>Firebase Analytics（Google LLC）</strong>：ステージ進行状況、ゲームバランス改善、不具合の把握およびアプリ品質向上のための匿名利用統計に利用します。<br />
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase のプライバシーとセキュリティ</a>
+          </li>
+          <li>
+            <strong>Apple Game Center（Apple Inc.）</strong>：任意でサインインした場合、スコアランキング（BLITZ / FULL RUN / DAILY / PROTOCOL）の表示およびスコア送信に利用します。<br />
+            <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple プライバシーポリシー</a>
+          </li>
+          <li>
+            <strong>Apple StoreKit（App 内課金）</strong>：買い切りの「広告削除パック」の購入および復元処理に利用します。決済情報は Apple により管理され、開発者がクレジットカード情報等を取得することはありません。
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. トラッキング（ATT）について</h2>
+        <p>本アプリは、広告配信の最適化のため、初回起動後に iOS の App Tracking Transparency（ATT）によるトラッキング許可ダイアログを表示します。</p>
+        <p>許可しない場合でも本アプリは問題なくプレイでき、パーソナライズされていない広告が表示されます。トラッキング設定は、いつでも iOS の「設定」＞「プライバシーとセキュリティ」＞「トラッキング」から変更できます。</p>
+        <p class="note">買い切りの「広告削除パック」をご購入いただいた場合、バナーおよびインタースティシャル広告は非表示となり、トラッキング許可ダイアログも表示されなくなります。</p>
+      </section>
+
+      <section>
+        <h2>4. お子様のプライバシー</h2>
+        <p>本アプリは 13 歳未満のお子様を対象としたアプリではありません。保護者の方の同意なく 13 歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+      </section>
+
+      <section>
+        <h2>5. プライバシーポリシーの変更</h2>
+        <p>法令の変更や本アプリの機能追加等に伴い、本ポリシーの内容を予告なく改定することがあります。重要な変更がある場合は本ページ上で公表します。</p>
+      </section>
+
+      <section>
+        <h2>6. お問い合わせ</h2>
+        <p>本ポリシーや本アプリのプライバシーに関するお問い合わせは、以下の窓口までご連絡ください。</p>
+        <p>
+          開発者：GRAZE BREAK 開発チーム<br />
+          連絡先：<a href="mailto:kyoshihara0411@gmail.com">kyoshihara0411@gmail.com</a>
+        </p>
+      </section>
+    </div>
+
+    <footer data-lang="en">
+      <a href="./index.html?lang=en">Home</a>
+      <a href="./support.html?lang=en">Support</a>
+      <a href="./privacy.html?lang=en">Privacy Policy</a>
+    </footer>
+    <footer data-lang="ja">
+      <a href="./index.html?lang=ja">トップ</a>
+      <a href="./support.html?lang=ja">サポート</a>
+      <a href="./privacy.html?lang=ja">プライバシーポリシー</a>
+    </footer>
+  </main>
+  <script>
+    function setLang(lang) {
+      const l = lang === "ja" ? "ja" : "en";
+      document.body.className = "lang-" + l;
+      document.documentElement.lang = l;
+      document.title = l === "ja" ? "プライバシーポリシー | GRAZE BREAK" : "Privacy Policy | GRAZE BREAK";
+      document.getElementById("btn-en").classList.toggle("active", l === "en");
+      document.getElementById("btn-ja").classList.toggle("active", l === "ja");
+      localStorage.setItem("gb_docs_lang", l);
+    }
+    const q = new URLSearchParams(location.search).get("lang");
+    const saved = localStorage.getItem("gb_docs_lang");
+    const init = q || (saved === "ja" || saved === "en" ? saved : null) || ((navigator.language || "").toLowerCase().startsWith("ja") ? "ja" : "en");
+    setLang(init);
+  </script>
+</body>
+</html>
