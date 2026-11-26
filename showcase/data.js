@@ -557,6 +557,30 @@ const apps = [
     screens: ["screen-1.png", "screen-2.png", "screen-3.png"],
     privacy: null,
   },
+  {
+    slug: "grazebreak",
+    name: "GRAZE BREAK",
+    reading: "グレイズブレイク",
+    category: "ゲーム",
+    platform: "iPhone",
+    status: "App Storeで配信中",
+    tagline: "弾をかすめて、一気に壊す。",
+    description: "敵弾のすぐそばをかすめてHEATを溜め、中ボスを倒した瞬間のBREAKで火力を爆発させる、片手で遊べる縦シューティングです。",
+    audience: "短い時間で濃いスコアアタックを遊びたい人、弾幕シューティングに片手で挑みたい人へ。",
+    features: [
+      ["GRAZEで火力が上がる", "弾をかすめるほどHEATが貯まり、攻撃速度とスコア倍率が最大×10まで上がります。"],
+      ["BREAKで一気に逆転", "中ボスを倒すとBREAK。HPが全回復し、火力が時間とともに倍々に増えていきます。"],
+      ["毎回変わるビルド", "レベルアップのたびに3枚のカードから強化を選び、武器の組み合わせでFUSIONします。"],
+      ["DAILYとランキング", "全員が同じ条件で挑む日替わりステージで、Game Centerのランキングを競えます。"],
+    ],
+    accent: "#13b8c9",
+    accentSoft: "#e2f7f9",
+    ink: "#102a33",
+    icon: "icon.png",
+    screens: ["screen-1.png", "screen-2.png", "screen-3.png"],
+    storeUrl: "https://apps.apple.com/jp/app/id6837920690",
+    privacy: "grazebreak",
+  },
 ];
 
 const bySlug = Object.fromEntries(apps.map((app) => [app.slug, app]));
@@ -586,6 +610,7 @@ const blueprints = {
   "asc-autotranslate": { layout: "document", tone: "technical", accent: "var(--accent-asc)", note: "LOCALIZATION WORKSPACE" },
   flickrush: { layout: "marquee", tone: "playful", accent: "var(--accent-flickrush)", note: "60 SECOND CHALLENGE" },
   irumaru: { layout: "map", tone: "quiet", accent: "var(--accent-irumaru)", note: "GENTLE CIRCLE" },
+  grazebreak: { layout: "marquee", tone: "playful", accent: "var(--accent-grazebreak)", note: "BULLET GRAZE SHOOTER" },
 };
 
 const categories = ["すべて", ...new Set(apps.map((app) => app.category))];

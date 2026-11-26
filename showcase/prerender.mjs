@@ -6,7 +6,7 @@ const slugs = [
   "currency-window", "dokoiku", "eswriter", "flightrecord", "zentree",
   "haretenki", "kasacat", "matchdayframe", "nomisugoroku", "readinglog", "readrop",
   "tabiplot", "tomelog", "wasurena", "yohaku", "zaikoff", "goukaku-log",
-  "subscription", "syukatu-kanri", "warlet", "asc-autotranslate", "flickrush", "irumaru",
+  "subscription", "syukatu-kanri", "warlet", "asc-autotranslate", "flickrush", "irumaru", "grazebreak",
 ];
 const pages = [
   ["", "index.html"],

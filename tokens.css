@@ -42,6 +42,7 @@
   --accent-asc: oklch(50% 0.16 285);
   --accent-flickrush: oklch(54% 0.19 30);
   --accent-irumaru: oklch(48% 0.09 145);
+  --accent-grazebreak: oklch(52% 0.12 210);
 
   --font-display: "BIZ UDPGothic", "Hiragino Sans", sans-serif;
   --font-body: "IBM Plex Sans JP", "Yu Gothic", sans-serif;
